@@ -1,0 +1,139 @@
+{
+ "test_scripts": {
+  "props": {
+   "errors": 0,
+   "failures": 0,
+   "orphans": 0,
+   "passing": 8,
+   "pending": 0,
+   "risky": 0,
+   "tests": 8,
+   "time": 0.358,
+   "warnings": 1
+  },
+  "scripts": {
+   "res://Test/Challenges/test_sprint5_challenges.gd": {
+    "props": {
+     "failures": 0,
+     "pending": 0,
+     "skipped": false,
+     "tests": 8
+    },
+    "tests": {
+     "test_req001_profile_challenge_isolation": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "Profile 1 should have kill challenge completed",
+       "Profile 2 should NOT have kill challenge completed",
+       "Profile 1 should still have challenge completed after switch"
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.011891
+     },
+     "test_req001_profile_data_isolation": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "Alice should have ship_3 unlocked",
+       "[\"TestAlice\"] expected to equal [\"TestAlice\"]:  Current profile should be Alice",
+       "Bob should NOT have ship_3 unlocked",
+       "Bob should have default ship_1",
+       "Bob should have default ship_2",
+       "[\"TestBob\"] expected to equal [\"TestBob\"]:  Current profile should be Bob",
+       "Alice should still have ship_3 after switching back",
+       "[\"TestAlice\"] expected to equal [\"TestAlice\"]:  Current profile should be Alice again"
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.016124
+     },
+     "test_req001_profile_name_validation": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "Empty profile name should fail",
+       "Profile with valid name should be created",
+       "[\"ValidPlayer123\"] expected to equal [\"ValidPlayer123\"]:  Current profile should be set to ValidPlayer123",
+       "Backend accepts short names (UI validates)",
+       "Profile with 20 characters should succeed"
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.001553
+     },
+     "test_req001_profile_unlock_persistence": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "Plasma weapon should be unlocked",
+       "Ship 4 should be unlocked",
+       "Default ship_1 should still be unlocked",
+       "Default ship_2 should still be unlocked",
+       "Default pulselaser should still be unlocked",
+       "Default rocket should still be unlocked"
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.011439
+     },
+     "test_req014_apply_heal_upgrade": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "[70] expected to equal [70]:  Player HP should increase by 20 after heal upgrade.",
+       "[100] expected to equal [100]:  Player HP should be clamped at maxhp (100) after healing."
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.001943
+     },
+     "test_req015_kill_challenge_logic": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "Should not be complete at 499 kills",
+       "Challenge should COMPLETE at 500 kills"
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.006488
+     },
+     "test_req015_survival_time_logic": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "Should not unlock at 4:59",
+       "Should unlock at exactly 5:00"
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.001153
+     },
+     "test_req015_weapon_max_level_unlock_logic": {
+      "failing": [],
+      "orphan_count": 0,
+      "orphans": [],
+      "passing": [
+       "Challenge should NOT unlock at level 7.",
+       "[7] expected to equal [7]:  Highest weapon level should be tracked as 7.",
+       "Challenge MUST unlock at level 8.",
+       "[8] expected to equal [8]:  Highest weapon level should be tracked as 8."
+      ],
+      "pending": [],
+      "status": "pass",
+      "time_taken": 0.006402
+     }
+    }
+   }
+  }
+ }
+}

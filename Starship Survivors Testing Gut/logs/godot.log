@@ -1,0 +1,42 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+OpenGL API 3.3.0 Core Profile Context 25.11.1.251104 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon RX 6650 XT
+
+---  GUT  ---
+[INFO]:  using [C:/Users/lolst/AppData/Roaming/Godot/app_userdata/Starship Survivors Testing Gut] for temporary output.
+Godot version:  4.5.0
+GUT version:  9.5.0
+
+
+res://Test/Challenges/test_sprint5_challenges.gd
+* test_req001_profile_name_validation
+* test_req001_profile_data_isolation
+* test_req001_profile_unlock_persistence
+* test_req001_profile_challenge_isolation
+* test_req015_kill_challenge_logic
+* test_req015_survival_time_logic
+* test_req015_weapon_max_level_unlock_logic
+* test_req014_apply_heal_upgrade
+1 orphans
+[WARNING]:  Test script has 2 unfreed children.  Increase log level for more details.
+8/8 passed.
+
+
+
+
+==============================================
+= Run Summary
+==============================================
+
+Totals
+------
+Warnings              1
+
+Scripts               1
+Tests                 8
+Passing Tests         8
+Asserts              32
+Time              0.357s
+
+
+---- All tests passed! ----
+
